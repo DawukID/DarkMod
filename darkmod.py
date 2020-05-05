@@ -40,13 +40,13 @@ logo = """\033[1;97m█████████
 \033[1;97m█▄█████▄█      \033[1;96m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●
 \033[1;97m█\033[1;91m▼▼▼▼▼ \033[1;97m- _ --_--\033[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ 
 \033[1;97m█ \033[1;97m \033[1;97m_-_-- -_ --__\033[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗
-\033[1;97m█\033[1;91m▲▲▲▲▲\033[1;97m--  - _ --\033[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝ \033[1;93mVIP
+\033[1;97m█\033[1;91m▲▲▲▲▲\033[1;97m--  - _ --\033[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝ \033[1;93mMod
 \033[1;97m█████████      \033[1;96m«°°°°°°°°°°✧°°°°°°°°°°»
 \033[1;97m ██ ██
 \033[1;97m╔════════════════════════════════════════╗
-\033[1;97m║\033[1;93m* \033[1;97mRecode  \033[1;91m: \033[1;96mThe Magizz \033[1;97m                 ║
-\033[1;97m║\033[1;93m* \033[1;97mGithub  \033[1;91m: \033[1;96mhttps://github.com/TheMagizz\033[1;97m║
-\033[1;97m║\033[1;93m* \033[1;97mFB      \033[1;91m: \033[1;92m\033[4mhttps://fb.me/rizz.magizz\033[0m   \033[1;97m║
+\033[1;97m║\033[1;93m* \033[1;97mRecode  \033[1;91m: \033[1;96mDawuk ID \033[1;97m                 ║
+\033[1;97m║\033[1;93m* \033[1;97mGithub  \033[1;91m: \033[1;96mhttps://github.com/DawukID\033[1;97m║
+\033[1;97m║\033[1;93m* \033[1;97mFB      \033[1;91m: \033[1;92m\033[4mhttps://fb.me/satria.id.7739\033[0m   \033[1;97m║
 \033[1;97m║\033[1;93m* \033[1;97mVersion \033[1;91m: \033[1;92m\033[4m1.1.0\033[0m                       \033[1;97m║
 \033[1;97m╚════════════════════════════════════════╝"""
 
@@ -257,7 +257,7 @@ def pilih():
 		os.remove('out')
 	elif zedd =="9":
 		os.system('rm -rf login.txt')
-		os.system('xdg-open https://www.facebook.com/rizz.magizz')
+		os.system('xdg-open https://www.facebook.com/satria.id.7739')
 		keluar()
 	elif zedd =="0":
 		keluar()
@@ -278,7 +278,7 @@ def informasi():
 	os.system('reset')
 	print logo
 	aid = raw_input('\033[1;91m[+] \033[1;92mEnter ID\033[1;97m/\033[1;92mName\033[1;91m : \033[1;97m')
-	jalan('\033[1;91m[✺] \033[1;92mWait a minute \033[1;97m...')
+	jalan('\033[1;91m[✺] \033[1;92mTunggu Bentar Nyet \033[1;97m...')
 	r = requests.get('https://graph.facebook.com/me/friends?access_token='+toket)
 	cok = json.loads(r.text)
 	for i in cok['data']:
